@@ -31,7 +31,10 @@ public class Count_Frequency {
 			Integer l = entry.getKey();
 			Integer v = entry.getValue();
 			
-			System.out.println(l + "occurence " + v + "times" );
+			System.out.println(l + "occurence " + v + " times" ); //2 occurence 3 times
+									    // 5 occurence 4 times
+									    //6occurence 2times
+		
 		}
 	}
 }
