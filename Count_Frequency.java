@@ -26,6 +26,21 @@ public class Count_Frequency {
 			Integer j = mp.get(i);
 			mp.put(i, (j==null)?1:j+1);
 		}
+		
+		 // Sort the list elements based on frequency 
+		/*
+		List ls = new LinkedList(mp.entrySet());
+	      
+	       Collections.sort(ls, new Comparator() {
+	            @Override
+	            public int compare(Object obj1, Object obj2) {
+	               return ((Comparable) ((Map.Entry) (obj1)).getValue())
+	                  .compareTo(((Map.Entry) (obj2)).getValue())*-1;
+	            }
+	       });
+	       
+	       */
+		
 		Set<Entry<Integer, Integer>> set = mp.entrySet();
 		for (Entry<Integer, Integer> entry : set) {
 			Integer l = entry.getKey();
